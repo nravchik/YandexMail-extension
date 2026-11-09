@@ -1,0 +1,92 @@
+html.dark-mode {
+	color-scheme: dark;
+	background: #1b1d21;
+	color: #e8e9ed;
+	accent-color: #8ab4f8;
+}
+.dark-mode body,
+.dark-mode .mail-app,
+.dark-mode .mail-menu,
+.dark-mode .mail-menu-content,
+.dark-mode .mail-message-item,
+.dark-mode .mail-hover-menu__back {
+	background-color: #1b1d21;
+	color: #e8e9ed;
+}
+.dark-mode a,
+.dark-mode a:visited,
+.dark-mode .mail-menu-settings__link {
+	color: #8ab4f8;
+}
+.dark-mode a:hover,
+.dark-mode .mail-menu-settings__link:hover,
+.dark-mode .mail-messages__continue:hover,
+.dark-mode .mail-hover-menu__block:hover {
+	color: #adcaff;
+}
+.dark-mode hr {
+	border-color: #454952;
+}
+.dark-mode .mail-message-item__from-text,
+.dark-mode .mail-massage-item__subject,
+.dark-mode .mail-menu__account-item.authorized {
+	color: #e8e9ed;
+}
+.dark-mode .mail-header__current-count,
+.dark-mode .mail-header__msgs-count,
+.dark-mode .mail-massage-item__summary,
+.dark-mode .mail-message-item__from-date,
+.dark-mode .mail-menu__account-item,
+.dark-mode .mail-menu__account-item-count,
+.dark-mode .mail-menu__account-item-loginout,
+.dark-mode .mail-menu__account-item-delete,
+.dark-mode .mail-menu__nounread,
+.dark-mode .mail-messages__continue,
+.dark-mode .mail-error {
+	color: #aeb4c0;
+}
+.dark-mode .mail-message-item:hover,
+.dark-mode .mail-header__create:hover,
+.dark-mode .mail-header__user-login:hover,
+.dark-mode .mail-header__refresh:hover,
+.dark-mode .mail-header__menu-item:hover,
+.dark-mode .mail-menu__account-item-email:hover,
+.dark-mode .mail-menu__account-item-loginout:hover,
+.dark-mode .mail-menu__account-item-delete:hover,
+.dark-mode .mail-hover-menu__block,
+.dark-mode .mail-error_refresh-button {
+	background-color: #30343c;
+	color: #e8e9ed;
+}
+.dark-mode .mail-error_refresh-button:hover {
+	background-color: #404651;
+}
+.dark-mode .mail-app .scrollable .scroll-bar .thumb .thumb-inner {
+	background-color: #d5dae4;
+}
+.dark-mode .mail-header__create-icon,
+.dark-mode .mail-header__refresh img,
+.dark-mode .mail-header__menu-item-img,
+.dark-mode .mail-hover-menu__block img,
+.dark-mode .mail-message-item__from-attach-ico {
+	filter: invert(1);
+}
+
+.mail-menu__logo-img {
+	width: 104px;
+	height: 48px;
+	object-fit: cover;
+	object-position: top;
+}
+.mail-menu__logo-label {
+	margin-top: 12px;
+	font-size: 18px;
+	color: #111;
+	cursor: pointer;
+}
+.dark-mode .mail-menu__logo-label {
+	color: #fff;
+}
+.dark-mode .mail-header {
+	border-bottom-color: rgba(255, 219, 76, .3);
+}

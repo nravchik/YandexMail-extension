@@ -1,0 +1,86 @@
+{
+	"background": {
+		"service_worker": "modern-worker.js"
+	},
+	"content_scripts": [
+		{
+			"all_frames": false,
+			"js": [
+				"includes/nano-includes.min.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"run_at": "document_end"
+		},
+		{
+			"all_frames": true,
+			"js": [
+				"includes/nano-includes-frames.min.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"run_at": "document_end"
+		},
+		{
+			"all_frames": false,
+			"js": [
+				"includes/mail-includes.min.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"default_locale": "ru",
+	"description": "__MSG_description__",
+	"icons": {
+		"16": "logo/chrome/ya_16_ru.png",
+		"48": "logo/chrome/mail_48.png",
+		"128": "logo/chrome/mail_128.png"
+	},
+	"incognito": "split",
+	"manifest_version": 3,
+	"minimum_chrome_version": "116",
+	"name": "__MSG_name__",
+	"options_page": "options/options.html",
+	"permissions": [
+		"webRequest",
+		"webNavigation",
+		"cookies",
+		"unlimitedStorage",
+		"management",
+		"tabs",
+		"notifications",
+		"alarms",
+		"offscreen"
+	],
+	"version": "8.22.3.8",
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"balloon/mail/img/icon.png",
+				"logo/*",
+				"includes/*",
+				"common/*"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			]
+		}
+	],
+	"action": {
+		"default_icon": "button/img/mail_no_connect.png",
+		"default_popup": "slice/index.html"
+	},
+	"host_permissions": [
+		"http://*/*",
+		"https://*/*"
+	]
+}
